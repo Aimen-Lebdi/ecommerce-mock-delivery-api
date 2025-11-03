@@ -1,0 +1,12 @@
+# Mock Delivery API .dockerignore
+# Location: mock-delivery-api/.dockerignore
+
+node_modules
+npm-debug.log
+.git
+.gitignore
+README.md
+.vscode
+.idea
+*.md
+.DS_Store
