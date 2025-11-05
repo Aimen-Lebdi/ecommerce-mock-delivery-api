@@ -1,9 +1,6 @@
-# Mock Delivery API Dockerfile
-# Location: mock-delivery-api/Dockerfile
-
+# mock-delivery-api/Dockerfile
 FROM node:22-alpine
 
-# Set working directory
 WORKDIR /app
 
 # Copy package files

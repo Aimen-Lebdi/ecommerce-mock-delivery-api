@@ -1,24 +1,39 @@
-# Logs
-logs
+# .gitignore
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment files - IMPORTANT!
+.env
+.env.local
+.env.production
+.env.development
+*.env
+
+# But keep example files
+!.env.example
+
+# Build outputs
+dist/
+build/
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Uploads (if you don't want to commit them)
+uploads/
+!uploads/.gitkeep
+
+# Docker volumes
+mongodb_data/
+mongodb_config/
